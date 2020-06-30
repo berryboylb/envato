@@ -1,10 +1,13 @@
 body {
     background: white;
     font-family: 'Lato', sans-serif;
-    width: 100%;
 }
 header {
     background-image: url(images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
     color: #FFFFFF;
     height: 600px;
 }
@@ -24,7 +27,7 @@ header li:first-child {
     font-size: 30px !important;
 }
 header li:nth-child(2) {
-    margin-left: 30%;
+    margin-left: 20%;
 }
 header a {
     text-decoration: none;
@@ -107,7 +110,8 @@ div .newimage {
     margin-top: 3%;
 }
 div .newimage img {
-    margin-left: 20%;
+    margin-left: 7%;
+    width: 90%;
 }
 div .newword p{
     font-size: 16px !important;
@@ -156,10 +160,16 @@ div .thirdimage {
     margin-top: 4%;
     margin-right: 4%;
 }
-div .thirdimage img {
+div .thirdimage .story {
     height: 400px;
     width: 100%;
     border-radius: 5px;
+}
+div .thirdimage .videoicon {
+    position: absolute;
+    display: block;
+    margin-top: -20%;
+    margin-left: 23%;
 }
 div .anotherimage img {
     height: 400px;
@@ -197,7 +207,7 @@ div .anotherword button a:hover {
     display: none;
 }
 .newsletter {
-    margin-top: 10%;
+    margin-top: 25%;
     color: #3E3655;
 }
  .newsletter .form {
@@ -288,7 +298,7 @@ footer .icons a:hover {
        display : none;
    }
    .mobile-container {
-       max-width: 600px;
+       /* max-width: 600px; */
        margin: auto;
        color: #ffffff;
        border-radius: 10px;
@@ -301,8 +311,7 @@ footer .icons a:hover {
      }
      
      .topnav #myLinks {
-       display: block;
-       overflow: hidden;
+       display: none;
      }
      
      .topnav a {
@@ -392,6 +401,12 @@ footer .icons a:hover {
     .newsletter .form {
         margin-left: 25%;
     }
+    div .thirdimage .videoicon {
+        margin-top: -30%;
+    }
+    .newword .hide {
+        text-align: center;
+    }
  }
 
 @media screen and (max-width: 650px) {
@@ -449,7 +464,6 @@ footer .icons a:hover {
       }
       header {
           height: 700px;
-          width: 100%;
       }
       header button {
           margin-left: 25%;
@@ -473,6 +487,9 @@ footer .icons a:hover {
       div .newword {
           display: block;
           margin-bottom: 10% !important;
+      }
+      div .neword .hide  {
+          text-align: center !important;
       }
       div .newimage  {
          
@@ -508,11 +525,15 @@ footer .icons a:hover {
         text-align: center;
         margin-left: 0;
     }
-    div .thirdimage img {
+    div .thirdimage .story {
         margin-top: 5%;
         width: 80%;
         margin-left: 10%;
         height: 350px;
+    }
+    div .thirdimage .videoicon {
+        margin-top: -55%;
+        margin-left: 45%;
     }
     .firstaboutsection {
         display: block;
